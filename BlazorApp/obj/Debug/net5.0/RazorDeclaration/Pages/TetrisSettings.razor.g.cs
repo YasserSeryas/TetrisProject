@@ -82,6 +82,13 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\Pages\TetrisSettings.razor"
+using BlazorApp.Data;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/tetris/settings")]
     public partial class TetrisSettings : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +97,32 @@ using BlazorApp.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 20 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\Pages\TetrisSettings.razor"
+ 
+
+    
+    private int Height { get; set; }
+    private int Width { get; set;}
+    private int NewH { get; set; }
+    private int NewW { get; set; }
+ 
+    public Grid Grille = new Grid();
+    private void GetValuet()
+
+    {
+
+        NewH = Height;
+        NewW = Width;
+       
+        Grille.Height=NewH;
+        Grille.Width=NewW;
+    }
+
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

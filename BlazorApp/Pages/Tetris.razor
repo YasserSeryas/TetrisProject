@@ -14,10 +14,10 @@
 
     <div class="col">
         <div class="tetris-container" tabindex="0"  >
-            @for (int i = grid.Height; i >= 1; i--)
+            @for (int i = grid.Width; i >= 1; i--)
             {
                 <div class="tetris-row">
-                    @for (int j = 1; j <= grid.Width; j++)
+                    @for (int j = 1; j <= grid.Height; j++)
                     {
                         <a>¤</a>
                     }
@@ -25,8 +25,36 @@
             }
         </div>
     </div>
+    <h3>GetTextBox</h3>
+
+<input @bind="Height"/>   
+<input @bind="Width"/>
+
+<p>Current count: @Height,@Width</p>
+
+<button  @onclick="GetValuet">Click me</button>
 @code {
       Grid grid = new Grid();
+      
+       private int Height { get; set; }
+    private int Width { get; set;}
+    private int NewH { get; set; }
+    private int NewW { get; set; }
+ 
+   
+    private void GetValuet()
+
+    {
+
+        NewH = Height;
+        NewW = Width;
+       
+        grid.Height=NewH;
+        grid.Width=NewW;
+    }
+
+
+      
     
     
 } 
