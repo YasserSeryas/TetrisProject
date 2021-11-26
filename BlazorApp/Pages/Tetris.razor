@@ -1,0 +1,32 @@
+ @page "/tetris"
+@using BlazorApp.Data;
+<h1>TetrisProject</h1>
+
+
+<a href=""></a>
+
+<a href="/tetris/settings" class="myButton2">Tetris Settings</a>
+<a href="/tetris"   class="myButton">Play</a>
+
+
+<a href="/tetris/credits" class="myButton3">Tetris Credits</a>
+
+
+    <div class="col">
+        <div class="tetris-container" tabindex="0"  >
+            @for (int i = grid.Height; i >= 1; i--)
+            {
+                <div class="tetris-row">
+                    @for (int j = 1; j <= grid.Width; j++)
+                    {
+                        <a>¤</a>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+@code {
+      Grid grid = new Grid();
+    
+    
+} 
