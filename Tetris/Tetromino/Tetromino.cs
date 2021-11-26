@@ -7,41 +7,6 @@ namespace Tetris.Tetromino
 {
     public class Tetromino
     {
-        /// <summary>
-        /// Représente la grille sur laquelle ce tétromino peut se déplacer.
-        /// </summary>
-        public Grid Grid { get; set; }
-
-        /// <summary>
-        /// L'orientation actuelle de ce tétromino. Les tétrominos tournent autour de leur centre.
-        /// </summary>
-        public TetrominoOrientation Orientation { get; set; } = TetrominoOrientation.LeftRight;
-
-        /// <summary>
-        /// La coordonnée X de la pièce centrale.
-        /// </summary>
-        public int CenterPieceRow { get; set; }
-
-        /// <summary>
-        /// Le coordonnée Y de la pièce centrale
-        /// </summary>
-        public int CenterPieceColumn { get; set; }
-
-        /// <summary>
-        /// Le style de ce tétromino, par ex. Droit, bloc, en forme de T, etc.
-        /// </summary>
-        public virtual TetrominoStyle Style { get; }
-
-        /// <summary>
-        /// La classe CSS qui est unique à ce style de tetromino.
-        /// </summary>
-        public virtual string CssClass { get; }
-
-        /// <summary>
-        /// Une collection de tous les espaces actuellement occupés par ce tétromino.
-        /// Cette collection est calculée par chaque style.
-        /// </summary>
-        public virtual CellCollection CoveredCells { get; }
 
         public Tetromino(Grid grid)
         {
@@ -50,9 +15,16 @@ namespace Tetris.Tetromino
             CenterPieceColumn = grid.Width / 2;
         }
 
-        /// <summary>
-        /// Fait pivoter le tétromino autour de la pièce centrale. Les tétrominos tournent toujours dans le sens des aiguilles d'une montre.
-        /// </summary>
+        public Tetromino(Grid grid, TetrominoOrientation orientation, int centerPieceRow, int centerPieceColumn, TetrominoStyle style, string cssClass) : this(grid)
+        {
+            Orientation = orientation;
+            CenterPieceRow = centerPieceRow;
+            CenterPieceColumn = centerPieceColumn;
+            Style = style;
+            CssClass = cssClass;
+        }
+
+        /// Fait pivoter le tétromino autour de la pièce centrale. (Les tétrominos tournent toujours dans le sens des aiguilles d'une montre).
         public void Rotate() 
         { 
             switch(Orientation)
@@ -76,8 +48,7 @@ namespace Tetris.Tetromino
 
             var coveredSpaces = CoveredCells;
 
-            //Si la nouvelle rotation du tétromino signifie qu'il serait en dehors du
-            //zone de jeu, décalez l'espace central de manière à garder tout le tétromino visible.
+            //Si la nouvelle rotation du tétromino signifie qu'il serait en dehors du zone de jeu, décalez l'espace central de manière à garder tout le tétromino visible.
             if(coveredSpaces.HasColumn(-1))
             {
                 CenterPieceColumn += 2;
@@ -109,8 +80,7 @@ namespace Tetris.Tetromino
 
         /// <summary>
         /// Faites tomber le tétromino jusqu'à son point le plus bas possible.
-        /// </summary>
-        /// <returns>Le score obtenu en laissant tomber la pièce</returns>
+        ///Le score obtenu en laissant tomber la pièce</
         public int Drop()
         {
             int scoreCounter = 0;
@@ -166,7 +136,6 @@ namespace Tetris.Tetromino
         /// <summary>
         /// Renvoie si le tétromino peut ou non se déplacer vers la droite
         /// </summary>
-        /// <returns></returns>
         public bool CanMoveRight()
         {
             //Pour chacun des espaces couverts, obtenez l'espace immédiatement à droite
@@ -212,6 +181,21 @@ namespace Tetris.Tetromino
                 return false;
 
             return true;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }
