@@ -58,7 +58,5 @@ C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.
 C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\BlazorApp.csproj.CopyComplete
 C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Tetris.razor.g.cs
 C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\TetrisCredits.razor.g.cs
-C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\TetrisSettings.razor.g.cs
 C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\Razor\Pages\Tetris.razor.g.cs
 C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\Razor\Pages\TetrisCredits.razor.g.cs
-C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\Razor\Pages\TetrisSettings.razor.g.cs

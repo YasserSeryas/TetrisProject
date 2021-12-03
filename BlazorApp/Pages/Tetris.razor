@@ -14,35 +14,43 @@
 
     <div class="col">
         <div class="tetris-container" tabindex="0"  >
-            @for (int i = grid.Width; i >= 1; i--)
+            
+            @for (int i = grid.Height; i >= 1; i--)
             {
                 <div class="tetris-row">
-                    @for (int j = 1; j <= grid.Height; j++)
+                    
+                    @for (int j = 1; j <= grid.Width; j++)
+                     
                     {
-                        <a>¤</a>
+                   @for(int k =1;k<=1; k++){ 
+                        l++;
+                   }
+                   
+                   <div id=@l class="tetris-cell "></div>
                     }
+                  
                 </div>
             }
         </div>
     </div>
-    <h3>GetTextBox</h3>
+    <h3>Settings</h3>
 
-<input @bind="Height"/>   
+ 
 <input @bind="Width"/>
+<input @bind="Height"/>  
+<p>Current settings:@Width, @Height (10 by 20 default)</p>
 
-<p>Current count: @Height,@Width</p>
-
-<button  @onclick="GetValuet">Click me</button>
+<button  @onclick="GetValue">Change Settings</button>
 @code {
       Grid grid = new Grid();
-      
+      int l;
        private int Height { get; set; }
     private int Width { get; set;}
     private int NewH { get; set; }
     private int NewW { get; set; }
  
    
-    private void GetValuet()
+    private void GetValue()
 
     {
 
