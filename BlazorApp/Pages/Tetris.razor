@@ -22,11 +22,12 @@
                     @for (int j = 1; j <= grid.Width; j++)
                      
                     {
-                   @for(int k =1;k<=1; k++){ 
-                        l++;
-                   }
                    
-                   <div id=@l class="tetris-cell "></div>
+                        l++;
+                   
+                   
+                    <div id=@l class="tetris-cell ">0</div> 
+                  @* <div id=@l class="tetris-cell tetris-piece tetris-orange-cell"></div>  *@
                     }
                   
                 </div>
@@ -40,7 +41,7 @@
 <input @bind="Height"/>  
 <p>Current settings:@Width, @Height (10 by 20 default)</p>
 
-<button  @onclick="GetValue">Change Settings</button>
+<button  @onclick="GetValue">Change </button>
 @code {
       Grid grid = new Grid();
       int l;
