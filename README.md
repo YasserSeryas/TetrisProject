@@ -17,7 +17,7 @@
  
 ## Démarrage rapide
   Ces instructions vont vous permettre d'obtenir une copie fonctionnelle du projet sur votre poste de travail.
-  *   Rendez-vous sur le site https://github.com/YasserSeryas/TetrisProject/edit/Enzo/README.md
+  *   Rendez-vous sur le site https://github.com/YasserSeryas/TetrisProject
   *   Télécharger le dépôt
 ## Exécution
   - Ouvrir le projet avec VS code
