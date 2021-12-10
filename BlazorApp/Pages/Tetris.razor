@@ -1,86 +1,10 @@
  @page "/tetris"
 @using BlazorApp.Data;
-<h1>TETRIS</h1>
-
-
-<a href=""></a>
-
- <a href="/tetris/settings" class="a">SETTINGS</a>
-<a href="/tetris" @onclick="play"  class="">PAUSE</a>
-
-
-<a href="/" class="a">LEAVE</a> 
-
-
-    <div class="col">
-        <div class="tetris-container" tabindex="0" >
-
-                @* @for (int a = tetromino.HeightTetrominoO; a >= 1; a--)
-            {
-                <div class="tetris-row">
-                    
-                    @for (int b = 1; b <= tetromino.WidthTetrominoO; b++)
-                     
-                    {
-
-                   
-                        O++;
-                   
-                   
-                        <div id=@l class="Tetromino-O">1</div> 
-                        @* <div id=@l class="tetris-cell tetris-piece tetris-orange-cell"></div> 
-                    }
-                  
-                </div>
-            } *@
-            
-            @for (int i = grid.Height; i >= 1; i--)
-            {
-                <div class="tetris-row">
-                    
-                    @for (int j = 1; j <= grid.Width; j++)
-                     
-                    {
-
-
-
-                   
-                        l++;
-                   
-                   
-                        
-                        
-
-                        
-                        @if(l == 5 || l == 6 ||l==15 ||l==16){
-
-                         <div class="Tetromino-O"></div> 
-                         
-                        }else{
-                            <div id=@l class="tetris-cell "></div> 
-
-                        }
-                    }
-                  
-                </div>
-            }
-
-
-        </div>
-    </div>
-    <h3>Settings</h3>
-
- 
-<input @bind="Width"/>
-<input @bind="Height"/>  
-<p>Current settings:@Width, @Height (10 by 20 default)</p>
-
-<button  @onclick="GetValue">Change </button>
+@* Code *@
 @code {
 
     Tetromino tetromino = new Tetromino();
     
-    int O;
 
     private int HeightTetrominoO {get; set; }
 
@@ -90,15 +14,15 @@
 
     private int NewWT {get; set; }
 
-int l;
+    int l;
 
 
       Grid grid = new Grid();
       
-       private int Height { get; set; }
-    private int Width { get; set;}
-    private int NewH { get; set; }
-    private int NewW { get; set; }
+        private int Height { get; set; }
+        private int Width { get; set;}
+        private int NewH { get; set; }
+        private int NewW { get; set; }
  
    
     private void GetValue()
@@ -122,3 +46,49 @@ int l;
     
     }
 } 
+                    @* code html *@
+<h1>TETRIS</h1>
+
+
+<a href=""></a>
+
+ <a href="/tetris/settings" class="a">SETTINGS</a>
+<a href="/tetris" @onclick="play"  class="">PAUSE</a>
+
+
+<a href="/" class="a">LEAVE</a> 
+
+
+    <div class="col">
+        <div class="tetris-container" tabindex="0" >
+            
+            @for (int i = grid.Height; i >= 1; i--)
+            {
+                <div class="tetris-row">
+                    
+                    @for (int j = 1; j <= grid.Width; j++)
+                     
+                    {
+                          l++;
+        
+                        @if(l == 5 || l == 6 ||l==15 ||l==16){
+
+                         <div class="Tetromino-O"></div> 
+                         
+                        }else{
+                            <div id=@l class="tetris-cell "></div> 
+
+                        }
+                    }
+                  
+                </div>
+            }
+        </div>
+    </div>
+    @* Parametre *@
+    <h3>Settings</h3>
+    @* Recuperation des données entrées par l'utilisateur *@
+    <input @bind="Width"/>
+    <input @bind="Height"/>  
+    <p>Current settings:@Width, @Height (10 by 20 default)</p>
+    <button  @onclick="GetValue">Change </button>

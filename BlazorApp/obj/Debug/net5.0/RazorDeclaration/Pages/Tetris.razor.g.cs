@@ -98,12 +98,11 @@ using BlazorApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 79 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\Pages\Tetris.razor"
+#line 4 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\Pages\Tetris.razor"
        
 
     Tetromino tetromino = new Tetromino();
     
-    int O;
 
     private int HeightTetrominoO {get; set; }
 
@@ -113,15 +112,15 @@ using BlazorApp.Data;
 
     private int NewWT {get; set; }
 
-int l;
+    int l;
 
 
       Grid grid = new Grid();
       
-       private int Height { get; set; }
-    private int Width { get; set;}
-    private int NewH { get; set; }
-    private int NewW { get; set; }
+        private int Height { get; set; }
+        private int Width { get; set;}
+        private int NewH { get; set; }
+        private int NewW { get; set; }
  
    
     private void GetValue()

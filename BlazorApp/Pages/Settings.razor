@@ -1,0 +1,45 @@
+@page "/tetris/settings"
+@using BlazorApp.Data;
+ <h3>Settings</h3>
+    @* Recuperation des données entrées par l'utilisateur *@
+    <input @bind="Width"/>
+    <input @bind="Height"/>  
+    <p>Current settings:@Width, @Height (10 by 20 default)</p>
+    <button  @onclick="GetValue">Change </button>
+    
+@code {
+
+    private int HeightTetrominoO {get; set; }
+
+    private int WidthTetrominoO {get; set; }
+
+    private int NewHT {get; set; }
+
+    private int NewWT {get; set; }
+
+    int l;
+
+
+      Grid grid = new Grid();
+      
+        private int Height { get; set; }
+        private int Width { get; set;}
+        private int NewH { get; set; }
+        private int NewW { get; set; }
+ 
+   
+    private void GetValue()
+
+    {
+        NewHT = Height;
+
+        NewWT = Width;
+
+        NewH = Height;
+        NewW = Width;
+       
+        grid.Height=NewH;
+        grid.Width=NewW;
+
+    }
+    }

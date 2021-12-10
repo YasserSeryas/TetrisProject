@@ -184,3 +184,5 @@ C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.
 C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\BlazorApp.pdb
 C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\BlazorApp.genruntimeconfig.cache
 C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\BlazorApp.csproj.CopyComplete
+C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\RazorDeclaration\Pages\Settings.razor.g.cs
+C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\obj\Debug\net5.0\Razor\Pages\Settings.razor.g.cs
