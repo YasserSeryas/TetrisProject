@@ -111,39 +111,6 @@
         }
       },
       {
-        "HashCode": 1045744650,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.TetrisCredits",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TetrisCredits"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.TetrisCredits"
-        }
-      },
-      {
-        "HashCode": -1536496955,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.TetrisCredits",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.TetrisCredits"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.TetrisCredits",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1119012806,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.Tetris",
@@ -173,6 +140,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorApp.Pages.Tetris",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1045744650,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.TetrisCredits",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TetrisCredits"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.TetrisCredits"
+        }
+      },
+      {
+        "HashCode": -1536496955,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.TetrisCredits",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.TetrisCredits"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.TetrisCredits",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

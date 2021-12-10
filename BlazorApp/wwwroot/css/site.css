@@ -116,11 +116,6 @@ a, .btn-link {
     
 }
 
-.tetris-row {
-    display:table-row;
-    height:24px;
-    width:240px;
-}
 
 .tetris-cell {
     display:table-cell;

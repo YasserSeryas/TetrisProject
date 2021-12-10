@@ -17,7 +17,7 @@
             
             @for (int i = grid.Height; i >= 1; i--)
             {
-                <div class="tetris-row">
+                <div >
                     
                     @for (int j = 1; j <= grid.Width; j++)
                      
@@ -26,7 +26,7 @@
                         l++;
                    
                    
-                    <div id=@l class="tetris-cell ">0</div> 
+                    <td id=@l class="tetris-cell ">0</td> 
                   @* <div id=@l class="tetris-cell tetris-piece tetris-orange-cell"></div>  *@
                     }
                   
