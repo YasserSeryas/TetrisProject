@@ -3,7 +3,7 @@ public bool Contains (char value);
     while (line != 'o' && line != 'n')
             {
                 Console.WriteLine("La boucle va etre enlever ?");
-                marie = char.Parse(Console.ReadLine());
+                line = char.Parse(Console.ReadLine());
             }
 }
 
