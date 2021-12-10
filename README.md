@@ -1,7 +1,7 @@
 # 🎮 TetrisProject 🎮
 
 -Projet etudiant
-- **Intervenant :** 
+- **Intervenant :** Julien Sosthene, Sebastien Plottu, Pierre Merlet.
 ## Le jeux original
 - [Le jeux original](https://tetris.com/play-tetris)
 
