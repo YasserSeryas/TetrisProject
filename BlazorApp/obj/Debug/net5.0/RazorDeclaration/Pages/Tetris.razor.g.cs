@@ -13,77 +13,77 @@ namespace BlazorApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/_Imports.razor"
+#line 1 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/_Imports.razor"
+#line 2 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/_Imports.razor"
+#line 3 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/_Imports.razor"
+#line 4 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/_Imports.razor"
+#line 5 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/_Imports.razor"
+#line 6 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/_Imports.razor"
+#line 7 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/_Imports.razor"
+#line 8 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/_Imports.razor"
+#line 9 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\_Imports.razor"
 using BlazorApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/_Imports.razor"
+#line 10 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\_Imports.razor"
 using BlazorApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/Pages/Tetris.razor"
+#line 2 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\Pages\Tetris.razor"
 using BlazorApp.Data;
 
 #line default
@@ -98,11 +98,11 @@ using BlazorApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 73 "/Users/enzo/Downloads/TetrisProject-Yasser/BlazorApp/Pages/Tetris.razor"
+#line 79 "C:\Users\Serya\OneDrive\Documents\GitHub\TetrisProject\BlazorApp\Pages\Tetris.razor"
        
 
     Tetromino tetromino = new Tetromino();
-
+    
     int O;
 
     private int HeightTetrominoO {get; set; }
@@ -113,11 +113,11 @@ using BlazorApp.Data;
 
     private int NewWT {get; set; }
 
-
+int l;
 
 
       Grid grid = new Grid();
-      int l;
+      
        private int Height { get; set; }
     private int Width { get; set;}
     private int NewH { get; set; }
@@ -140,7 +140,10 @@ using BlazorApp.Data;
         tetromino.HeightTetrominoO = NewHT;
         tetromino.WidthTetrominoO = NewWT;
     }
-
+     void play() {
+         
+    
+    }
 
 #line default
 #line hidden

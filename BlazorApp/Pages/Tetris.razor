@@ -1,21 +1,21 @@
  @page "/tetris"
 @using BlazorApp.Data;
-<h1>TetrisProject</h1>
+<h1>TETRIS</h1>
 
 
 <a href=""></a>
 
-<a href="/tetris/settings" class="myButton2">Tetris Settings</a>
-<a href="/tetris"   class="myButton">Play</a>
+ <a href="/tetris/settings" class="a">SETTINGS</a>
+<a href="/tetris" @onclick="play"  class="">PAUSE</a>
 
 
-<a href="/tetris/credits" class="myButton3">Tetris Credits</a>
+<a href="/" class="a">LEAVE</a> 
 
 
     <div class="col">
         <div class="tetris-container" tabindex="0" >
 
-                @for (int a = tetromino.HeightTetrominoO; a >= 1; a--)
+                @* @for (int a = tetromino.HeightTetrominoO; a >= 1; a--)
             {
                 <div class="tetris-row">
                     
@@ -28,11 +28,11 @@
                    
                    
                         <div id=@l class="Tetromino-O">1</div> 
-                        @* <div id=@l class="tetris-cell tetris-piece tetris-orange-cell"></div>  *@
+                        @* <div id=@l class="tetris-cell tetris-piece tetris-orange-cell"></div> 
                     }
                   
                 </div>
-            }
+            } *@
             
             @for (int i = grid.Height; i >= 1; i--)
             {
@@ -48,12 +48,18 @@
                         l++;
                    
                    
-                        <div id=@l class="tetris-cell ">0</div> 
+                        
                         
 
                         
+                        @if(l == 5 || l == 6 ||l==15 ||l==16){
 
-                        @* <div id=@l class="tetris-cell tetris-piece tetris-orange-cell"></div>  *@
+                         <div class="Tetromino-O"></div> 
+                         
+                        }else{
+                            <div id=@l class="tetris-cell "></div> 
+
+                        }
                     }
                   
                 </div>
@@ -73,7 +79,7 @@
 @code {
 
     Tetromino tetromino = new Tetromino();
-
+    
     int O;
 
     private int HeightTetrominoO {get; set; }
@@ -84,11 +90,11 @@
 
     private int NewWT {get; set; }
 
-
+int l;
 
 
       Grid grid = new Grid();
-      int l;
+      
        private int Height { get; set; }
     private int Width { get; set;}
     private int NewH { get; set; }
@@ -111,5 +117,8 @@
         tetromino.HeightTetrominoO = NewHT;
         tetromino.WidthTetrominoO = NewWT;
     }
-
+     void play() {
+         
+    
+    }
 } 
