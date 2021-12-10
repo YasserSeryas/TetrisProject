@@ -1,0 +1,115 @@
+ @page "/tetris"
+@using BlazorApp.Data;
+<h1>TetrisProject</h1>
+
+
+<a href=""></a>
+
+<a href="/tetris/settings" class="myButton2">Tetris Settings</a>
+<a href="/tetris"   class="myButton">Play</a>
+
+
+<a href="/tetris/credits" class="myButton3">Tetris Credits</a>
+
+
+    <div class="col">
+        <div class="tetris-container" tabindex="0" >
+
+                @for (int a = tetromino.HeightTetrominoO; a >= 1; a--)
+            {
+                <div class="tetris-row">
+                    
+                    @for (int b = 1; b <= tetromino.WidthTetrominoO; b++)
+                     
+                    {
+
+                   
+                        O++;
+                   
+                   
+                        <div id=@l class="Tetromino-O">1</div> 
+                        @* <div id=@l class="tetris-cell tetris-piece tetris-orange-cell"></div>  *@
+                    }
+                  
+                </div>
+            }
+            
+            @for (int i = grid.Height; i >= 1; i--)
+            {
+                <div class="tetris-row">
+                    
+                    @for (int j = 1; j <= grid.Width; j++)
+                     
+                    {
+
+
+
+                   
+                        l++;
+                   
+                   
+                        <div id=@l class="tetris-cell ">0</div> 
+                        
+
+                        
+
+                        @* <div id=@l class="tetris-cell tetris-piece tetris-orange-cell"></div>  *@
+                    }
+                  
+                </div>
+            }
+
+
+        </div>
+    </div>
+    <h3>Settings</h3>
+
+ 
+<input @bind="Width"/>
+<input @bind="Height"/>  
+<p>Current settings:@Width, @Height (10 by 20 default)</p>
+
+<button  @onclick="GetValue">Change </button>
+@code {
+
+    Tetromino tetromino = new Tetromino();
+
+    int O;
+
+    private int HeightTetrominoO {get; set; }
+
+    private int WidthTetrominoO {get; set; }
+
+    private int NewHT {get; set; }
+
+    private int NewWT {get; set; }
+
+
+
+
+      Grid grid = new Grid();
+      int l;
+       private int Height { get; set; }
+    private int Width { get; set;}
+    private int NewH { get; set; }
+    private int NewW { get; set; }
+ 
+   
+    private void GetValue()
+
+    {
+        NewHT = Height;
+
+        NewWT = Width;
+
+        NewH = Height;
+        NewW = Width;
+       
+        grid.Height=NewH;
+        grid.Width=NewW;
+
+        tetromino.HeightTetrominoO = NewHT;
+        tetromino.WidthTetrominoO = NewWT;
+    }
+
+} 
