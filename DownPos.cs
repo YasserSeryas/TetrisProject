@@ -1,9 +1,8 @@
-public event EventHandler Tick;
+public event EventHandler timerTick;
 {
     downPos++;
     moveShape();
-    if (gameSpeed => slow)
-    {
+    if (gameSpeed => slow){
         gameSpeed += (gameSlow/500f);
     }
     elseif (gameSpeed => normal){
