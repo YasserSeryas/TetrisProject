@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lVCPdZQh0Z9bdISqnBfPaK7Bg0fbSb/HV6mDcvNdFuCHHbFO/KDBK2ZPupHBM9RjHAbFUze/u11HjdyVFldHYw==",
+  "dgSpecHash": "nkKHM2bHFWQ8iMYw3X2ZouZCJ7CRBmVAnWLW6dXku5tIWOiQvzCq0/7JN/3zFuoaq5DFrw4PmNJ+6H48eLEhaQ==",
   "success": true,
-  "projectFilePath": "/Users/enzo/Documents/GitHub/TetrisProject/BlazorApp/BlazorApp.csproj",
+  "projectFilePath": "C:\\Users\\Serya\\OneDrive\\Documents\\GitHub\\TetrisProject\\BlazorApp\\BlazorApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
